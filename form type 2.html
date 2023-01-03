@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    function my(){
+      var x=document.getElementById('text1').value;
+      alert("congratulations you have submitted successfully "+x);
+        }
+  </script>
+    <head>
+        <title>shrutiii</title>      
+    </head>
+    <body  style="background-color:powderblue;">
+      <h1><center>submission form</center></h1>
+      <h2 style="color:violet;">important to submit</h2>
+        <form action="/action_page.php">
+             <label for="name"><h2><i>name</i></h2></label>
+              name:<input type="text" id="text1"placeholder="enter name" required>  
+            <div>
+              <label for="date of birth"><h2><b>date of birth</b></h2></label>
+              dob:<input type="date" required>
+            </div>
+            <div>
+              <label for="password"><h2><mark>password</mark></h2></label>
+              password:<input type="password" placeholder="enter password" required>
+            </div>
+            <div>
+              <label for="email"><h2><ins>email</ins></h2></label>
+              email:<input type="email" placeholder="enter email" required>
+            </div>
+            <div>
+              <label for="mobile"><h2><i>mobile number</i></h2></label>
+              mobile:<input type="tel" placeholder="enter mobile number">
+            </div>
+            <div>
+              <label for="gender"><h2><i>gender</i></h2></label>
+              male:<input type="radio">
+              female:<input type="radio">
+            </div>
+            <div>
+              <label for="hobbies"><h2><i>hobbies</i></h2></label>
+              listening to music:<input type="checkbox">
+              singing:<input type="checkbox">  
+            </div><br>
+            <div>
+                <input type="submit"value="SUBMIT" required onclick="my()">
+                <a href="https://www.google.com">learn more</a>
+            </div><br>
+            <div>
+                <input type="reset" value="clear">
+            </div><br>  
+        </form>
+    </body>
+</html>
